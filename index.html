@@ -24,8 +24,7 @@
       <div class="navbar-inner">
         <header class="navbar-header">
         </header>
-
-        <nav data-nav='menu' class="navbar-menu">
+        <nav data-nav='menu' class="navbar-menu" data-js="nav">
           <button class="nav-button" data-button='noticias' type="button">
             <span>Notícias</span>
           </button>
@@ -37,6 +36,8 @@
           </button>
           <button class="nav-button" data-button='regimento' type="button">
             <span>Regimento</span>
+          <button class="nav-button" data-login="google">Logar</button>
+          <button class="nav-button display_none" data-login="logout">Deslogar</button>
         </nav>
       </div>
     </nav>
@@ -45,7 +46,7 @@
       <img src='./imgs/pagina.png' width="60%" height="40%"></img>
     </div>
   </div>
-  <script src="./app.js"></script>
+  <script type="module" src="./teste.js"></script>
 </body>
 
 </html>
