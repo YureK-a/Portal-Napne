@@ -9,43 +9,63 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Portal Napne
   </title>
 </head>
 
 <body>
-  <div data-js="main-page" class='main-page'>
-    <div class='menu'>
-      <img data-logo="ifrn-logo" src='./imgs/ifrnpng.png' class='ifrn-logo'></img>
-      <p class='title'>Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte</p>
+    <div class="container">
+        <div data-js="main-page" class='main-page'>
+        <div class='menu'>
+            <nav class="navbar navbar-light navbar-expand-md sticky-top" style="background-color: white;">
+                <div class="container">
+                    <!--logo-->
+                    <a href="index.html"  data-logo="ifrn-logo" class="navbar-brand d-flex align-items-center ifrn-logo">
+                        <img src="/imgs/sitelogo11.png" alt="" height="55px" class="me-2 fs-1"></a>
+                    <span class="navbar-text fs-3 ms-auto"style="font-weight: bold;">Portal Napne</span>
+                    <button class="navbar-toggler" type="buton" data-bs-toggle="collapse" data-bs-target="#menuNavbar" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="menuNavbar">
+                        <div class="navbar-nav ms-auto">
+                            <!-- Use a class active para indicar qual é a página que está ativa-->
+                            <a href="https://www.facebook.com/ifrnmossoro" class="nav-link"><img src="/imgs/facebook-new.png" height="20px" alt=""></a>
+                            <a href="https://x.com/ifrnoficial_" class="nav-link "style="margin-right:5px"><img src="/imgs/x.jpg" height="20px" alt=""></a>
+                            <a href="https://www.instagram.com/ifrnmossoro/" class="nav-link "style="margin-right:30px"><img src="/imgs/instaaa.png" height="20px" alt=""></a>
+                            <button type="button" class="btn btn-dark" data-login="google">Logar</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
-    <hr/>
     <nav class="navbar">
-      <div class="navbar-inner">
-        <header class="navbar-header">
-        </header>
-
-        <nav data-nav='menu' class="navbar-menu">
-          <button class="nav-button" data-button='noticias' type="button">
-            <span>Notícias</span>
-          </button>
-          <button class="nav-button" data-button='apresentacao' type="button">
-            <span>Apresentação</span>
-          </button>
-          <button class="nav-button" data-button='contato' type="button" class="has-border">
-            <span>Contato</span>
-          </button>
-          <button class="nav-button" data-button='regimento' type="button">
-            <span>Regimento</span>
-        </nav>
+        <div class="navbar-inner">
+          <header class="navbar-header">
+          </header>
+          <nav data-nav='menu' class="navbar-menu" data-js="nav">
+            <button class="nav-button" data-button='noticias' type="button">
+              <span>Notícias</span>
+            </button>
+            <button class="nav-button" data-button='apresentacao' type="button">
+              <span>Apresentação</span>
+            </button>
+            <button class="nav-button" data-button='contato' type="button" class="has-border">
+              <span>Contato</span>
+            </button>
+            <button class="nav-button" data-button='regimento' type="button">
+              <span>Regimento</span>
+            <button class="nav-button display_none" data-login="logout">Deslogar</button>
+          </nav>
+        </div>
+      </nav>
+      <div data-screen="initial" class='napne-logo container'>
+        <img src='./imgs/pagina.png' width="100%"></img>
       </div>
-    </nav>
-    <hr/>
-    <div data-screen="initial" class='napne-logo'>
-      <img src='./imgs/pagina.png' width="60%" height="40%"></img>
     </div>
-  </div>
-  <script src="./app.js"></script>
+  <script type="module" src="./teste.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
